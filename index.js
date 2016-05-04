@@ -1,4 +1,9 @@
-var math = require('mathjs');
+let math = require('mathjs');
 
-var a = math.sqrt(-4);
-console.log(a);
+let mathetats = {
+  mean: (arr) => {
+    return math.mean(arr);
+  }
+};
+
+module.exports = mathetats;
