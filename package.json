@@ -1,0 +1,28 @@
+{
+  "name": "mathetats",
+  "version": "0.1.0",
+  "description": "A JavaScript mathematics lib for statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'test is nothing'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/t_etor/mathetats.git"
+  },
+  "author": "tetor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/t_etor/mathetats/issues"
+  },
+  "homepage": "https://gitlab.com/t_etor/mathetats#README",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "chai": "^3.5.0",
+    "eslint": "^2.9.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "mathjs": "^3.2.1"
+  }
+}
