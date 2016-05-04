@@ -2,9 +2,11 @@
   "name": "mathetats",
   "version": "0.1.0",
   "description": "A JavaScript mathematics lib for statistics",
-  "main": "index.js",
+  "main": "bundle.js",
   "scripts": {
-    "test": "echo 'test is nothing'"
+    "test": "echo 'test is nothing'",
+    "watch": "watchify index.js -o bundle.js -v",
+    "build": "browserify index.js -o bundle.js -v"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,8 @@
     "babel": "^6.5.2",
     "chai": "^3.5.0",
     "eslint": "^2.9.0",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "watchify": "^3.7.0"
   },
   "dependencies": {
     "mathjs": "^3.2.1"
