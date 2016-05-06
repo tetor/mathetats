@@ -1,6 +1,9 @@
 # Nodenv
 .node-version
 
+# Build
+/dist/
+
 # Logs
 logs
 *.log

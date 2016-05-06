@@ -2,11 +2,11 @@
   "name": "mathetats",
   "version": "0.1.0",
   "description": "A JavaScript mathematics lib for statistics",
-  "main": "bundle.js",
+  "main": "dist/mathetats.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "watch": "watchify index.js -t babelify -o bundle.js -v",
-    "build": "browserify index.js -t babelify -o bundle.js -v"
+    "watch": "watchify src/index.js -t babelify -o dist/mathetats.js -v",
+    "build": "browserify src/index.js -t babelify -o dist/mathetats.js -v"
   },
   "repository": {
     "type": "git",

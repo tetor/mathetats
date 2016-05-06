@@ -5,7 +5,7 @@ chai.should();
 describe('mathetats', () => {
   let mts;
   beforeEach(() => {
-    mts = require(path.join(__dirname, '..', 'index'));
+    mts = require(path.join(__dirname, '..', 'src', 'index'));
   });
 
   describe('#mean', () => {
