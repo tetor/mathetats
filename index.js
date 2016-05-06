@@ -7,3 +7,4 @@ let mathetats = {
 };
 
 module.exports = mathetats;
+// export default mathetats;

@@ -2,18 +2,18 @@ let chai = require('chai');
 let path = require('path');
 chai.should();
 
-describe('mathetats', function () {
+describe('mathetats', () => {
   let mts;
   beforeEach(() => {
     mts = require(path.join(__dirname, '..', 'index'));
   });
 
-  describe('#mean', function () {
-    it('returns Number', function () {
+  describe('#mean', () => {
+    it('returns Number', () => {
       mts.mean([1, 2]).should.be.a('number');
     });
 
-    it('returns mean', function () {
+    it('returns mean', () => {
       mts.mean([1, 2]).should.equal(1.5);
     });
   });

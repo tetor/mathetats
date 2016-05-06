@@ -5,8 +5,8 @@
   "main": "bundle.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "watch": "watchify index.js -o bundle.js -v",
-    "build": "browserify index.js -o bundle.js -v"
+    "watch": "watchify index.js -t babelify -o bundle.js -v",
+    "build": "browserify index.js -t babelify -o bundle.js -v"
   },
   "repository": {
     "type": "git",
