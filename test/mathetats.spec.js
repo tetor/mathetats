@@ -1,5 +1,5 @@
-let chai = require('chai');
-let path = require('path');
+const chai = require('chai');
+const path = require('path');
 chai.should();
 
 describe('mathetats', () => {
@@ -29,6 +29,24 @@ describe('mathetats', () => {
 
     it('returns avarage of two middle values if even values are passed', () => {
       mts.median([1, 2, 3, 4]).should.equal(2.5);
+    });
+  });
+
+  describe('#variance', () => {
+    it('returns Number', () => {
+      mts.variance([2, 4, 6]).should.be.a('number');
+    });
+    it('returns Variance', () => {
+      mts.variance([2, 4, 6]).should.equal(4);
+    });
+    it('returns Variance', () => {
+      mts.variance([2, 4, 6]).should.equal(4);
+    });
+    it('can set normalization to uncorrected', () => {
+      mts.variance([2, 4, 6, 8], 'uncorrected').should.equal(5);
+    });
+    it('can set normalization to biased', () => {
+      mts.variance([2, 4, 6], 'biased').should.equal(2);
     });
   });
 });
