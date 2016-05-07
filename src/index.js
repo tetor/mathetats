@@ -1,12 +1,8 @@
-let math = require('mathjs');
+const math = require('mathjs');
 
-let mathetats = {
-  mean: (arr) => {
-    return math.mean(arr);
-  },
-  median: (arr) => {
-    return math.median(arr);
-  },
+const mathetats = {
+  mean: (arr) => math.mean(arr),
+  median: (arr) => math.median(arr),
 };
 
 
