@@ -1,0 +1,7 @@
+coverage:
+  range: "90...100"
+
+  notify:
+    gitter:
+      default:
+        url: https://webhooks.gitter.im/e/966cacc0205f82f8bbaf
