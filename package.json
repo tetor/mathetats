@@ -8,7 +8,7 @@
     "lint": "eslint src",
     "watch": "watchify src/index.js -t babelify -o dist/mathetats.js -v",
     "build": "browserify src/index.js -t babelify -o dist/mathetats.js -v",
-    "ci": "mocha --compilers js:babel-core?register --reporter mocha-junit-reporter"
+    "ci": "mocha --compilers js:babel-core/register --reporter mocha-junit-reporter"
   },
   "repository": {
     "type": "git",
