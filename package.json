@@ -5,9 +5,10 @@
   "main": "dist/mathetats.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "lint": "eslint src",
-    "watch": "watchify src/index.js -t babelify -o dist/mathetats.js -v",
-    "build": "browserify src/index.js -t babelify -o dist/mathetats.js -v"
+    "lint": "eslint .",
+    "build": "browserify src/index.js -t babelify -o dist/mathetats.js -v",
+    "watch:test": "mocha -w --compilers js:babel-core/register",
+    "watch:build": "watchify src/index.js -t babelify -o dist/mathetats.js -v"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
     "url": "https://gitlab.com/t_etor/mathetats/issues"
   },
   "homepage": "https://gitlab.com/t_etor/mathetats#README",
+  "files": ["dist"],
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.8.0",

@@ -2,12 +2,9 @@ const chai = require('chai');
 const path = require('path');
 chai.should();
 
-describe('mathetats', () => {
-  let mts;
-  beforeEach(() => {
-    mts = require(path.join(__dirname, '..', 'src', 'index'));
-  });
+const mts = require(path.join(__dirname, '..', 'src', 'index'));
 
+describe('mathetats', () => {
   describe('#mean', () => {
     it('returns Number', () => {
       mts.mean([1, 2]).should.be.a('number');
