@@ -7,10 +7,10 @@ notify:
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/mocha
-    - $(npm bin)/mocha --compilers js:babel-core/register --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/mocha/tests.xml
+    - mocha --compilers js:babel-core/register --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/mocha/tests.xml
 deployment:
   codecov:
     branch: /.*/
     commands:
-      - istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec
+      - babel-node node_modules/isparta/bin/isparta cover node_modules/mocha/bin/_mocha --
       - bash <(curl -s https://codecov.io/bash)
