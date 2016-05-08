@@ -4,3 +4,6 @@ machine:
 notify:
   webhooks:
     - url: https://webhooks.gitter.im/e/899c901c03a5a5337700
+test:
+  override:
+    - npm run ci
