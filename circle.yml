@@ -6,4 +6,6 @@ notify:
     - url: https://webhooks.gitter.im/e/899c901c03a5a5337700
 test:
   override:
-    - npm run ci
+    - MOCHA_FILE=$CIRCLE_TEST_REPORTS/mocha/tests.xml
+    - mkdir -p $CIRCLE_TEST_REPORTS/mocha
+    - `npm bin`/mocha --compilers js:babel-core/register --reporter mocha-junit-reporter
