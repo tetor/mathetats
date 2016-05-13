@@ -46,4 +46,13 @@ describe('mathetats', () => {
       mts.variance([2, 4, 6], 'biased').should.equal(2);
     });
   });
+
+  describe('#min', () => {
+    it('returns Number', () => {
+      mts.min([2, 4, 6]).should.be.a('number');
+    });
+    it('returns minimum number', () => {
+      mts.min([2, 4, 6]).should.equal(2);
+    });
+  });
 });
