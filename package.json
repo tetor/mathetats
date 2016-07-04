@@ -14,15 +14,16 @@
     "type": "git",
     "url": "git+ssh://git@gitlab.com/t_etor/mathetats.git"
   },
-  "author": "tetor",
+  "author": {
+    "name": "tetor",
+    "email": "tetor.takashi.etou@gmail.com",
+    "url": "http://tetor.github.io/about-me/"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/t_etor/mathetats/issues"
+    "url": "https://github.com/tetor/mathetats/issues"
   },
-  "homepage": "https://gitlab.com/t_etor/mathetats#README",
-  "files": [
-    "dist"
-  ],
+  "homepage": "https://github.com/tetor/mathetats",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.8.0",
@@ -43,5 +44,8 @@
   },
   "dependencies": {
     "mathjs": "^3.2.1"
+  },
+  "engines": {
+    "node": ">= 0.1"
   }
 }

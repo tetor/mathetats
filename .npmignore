@@ -1,0 +1,14 @@
+src
+test
+coverage
+node_modules
+.npmignore
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.yml
+.gitignore
+.istanbul.yml
+.node-version
+circle.yml
+codecov.yml
