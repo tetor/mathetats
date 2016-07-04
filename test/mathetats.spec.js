@@ -29,6 +29,53 @@ describe('mathetats', () => {
     });
   });
 
+  describe('#mode', () => {
+    it('returns array', () => {
+      mts.mode([1, 2, 3]).should.be.a('array');
+    });
+
+    it('returns mode', () => {
+      mts.mode([1, 2, 2, 3, 3]).should.eql([2, 3]);
+      mts.mode(['a', 'a', 'b', 'c']).should.eql(['a']);
+    });
+  });
+
+  describe('#min', () => {
+    it('returns Number', () => {
+      mts.min([2, 4, 6]).should.be.a('number');
+    });
+    it('returns minimum number', () => {
+      mts.min([2, 4, 6]).should.equal(2);
+    });
+  });
+
+  describe('#max', () => {
+    it('return Number', () => {
+      mts.max([2]).should.be.a('number');
+    });
+    it('returns maximum number', () => {
+      mts.max([2, 4, 6]).should.equal(6);
+    });
+  });
+
+  describe('#range', () => {
+    it('return Number', () => {
+      mts.range([2, 4]).should.be.a('number');
+    });
+    it('returns range of array', () => {
+      mts.range([2, 4, 6]).should.equal(4);
+    });
+  });
+
+  describe('#random', () => {
+    it('return Number', () => {
+      mts.random([2, 4]).should.be.a('number');
+    });
+    it('returns range of array', () => {
+      mts.random([2, 4, 6]).should.oneOf([2, 4, 6]);
+    });
+  });
+
   describe('#variance', () => {
     it('returns Number', () => {
       mts.variance([2, 4, 6]).should.be.a('number');
@@ -47,12 +94,12 @@ describe('mathetats', () => {
     });
   });
 
-  describe('#min', () => {
-    it('returns Number', () => {
-      mts.min([2, 4, 6]).should.be.a('number');
+  describe('#stdDev', () => {
+    it('return Number', () => {
+      mts.stdDev([2, 4]).should.be.a('number');
     });
-    it('returns minimum number', () => {
-      mts.min([2, 4, 6]).should.equal(2);
+    it('returns standard deviation', () => {
+      mts.stdDev([2, 4, 6]).should.equal(2);
     });
   });
 });
