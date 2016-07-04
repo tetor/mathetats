@@ -8,4 +8,71 @@ A JavaScript mathematics lib for statistics.
 [![bitHound Overall Score](https://www.bithound.io/github/tetor/mathetats/badges/score.svg)](https://www.bithound.io/github/tetor/mathetats)
 [![Join the chat at https://gitter.im/tetor/mathetats](https://badges.gitter.im/tetor/mathetats.svg)](https://gitter.im/tetor/mathetats?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-**WIP**
+## How to use
+
+```
+const mts = require('mathetats');
+```
+
+### #mean
+
+```
+mts.mean([1, 2]);
+// 1.5
+```
+
+### #median
+
+```
+mts.median([1, 2, 3]);
+// 2
+```
+
+### #mode
+
+```
+mts.mode([1, 2, 2, 3, 3]);
+// [2, 3]
+```
+
+### #min and #max
+
+```
+let list = [1, 2, 3];
+mts.min(list);
+// 1
+mts.max(list);
+// 3
+```
+
+### #range
+
+Get a number of array range.
+
+```
+mts.range([1, 2, 100]);
+// 99
+```
+
+### #random
+
+```
+mts.random([1, 2, 3]);
+// 1 or 2 or 3
+```
+
+### #variance
+
+```
+mts.variance([2, 4, 6]);
+// 4
+```
+
+### #stdDev
+
+Get a standard deviation.
+
+```
+mts.median([2, 4, 6]);
+// 2
+```
