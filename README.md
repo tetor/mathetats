@@ -74,6 +74,6 @@ mts.variance([2, 4, 6]);
 Get a standard deviation.
 
 ```
-mts.median([2, 4, 6]);
+mts.stdDev([2, 4, 6]);
 // 2
 ```
