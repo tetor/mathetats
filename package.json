@@ -4,6 +4,7 @@
   "description": "A JavaScript mathematics lib for statistics",
   "main": "dist/mathetats.js",
   "scripts": {
+    "prepublish": "npm build",
     "test": "mocha --compilers js:babel-core/register",
     "lint": "eslint .",
     "build": "browserify src/index.js -t babelify -o dist/mathetats.js -v",
