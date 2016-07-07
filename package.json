@@ -1,10 +1,10 @@
 {
   "name": "mathetats",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A JavaScript mathematics lib for statistics",
   "main": "dist/mathetats.js",
   "scripts": {
-    "prepublish": "npm build",
+    "prepublish": "npm run build",
     "test": "mocha --compilers js:babel-core/register",
     "lint": "eslint .",
     "build": "babel src/index.js -o dist/mathetats.js",
