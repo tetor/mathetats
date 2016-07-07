@@ -1,9 +1,6 @@
-const VERSION = '0.1.5';
-
 const math = require('mathjs');
 
 const mathetats = {
-  version: () => VERSION,
   // TODO: Argument type check http://is.js.org/
   // TODO: Divide code files
   mean: (arr) => math.mean(arr),
