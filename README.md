@@ -2,6 +2,7 @@
 
 A JavaScript mathematics lib for statistics.
 
+[![Taiga.io](https://img.shields.io/badge/ticket-on%20taiga.io-brightgreen.svg)](https://tree.taiga.io/project/tetor-mathetats/)
 [![Circle CI](https://circleci.com/gh/tetor/mathetats.svg?style=shield)](https://circleci.com/gh/tetor/mathetats)
 [![Codeship Status for tetor/mathetats](https://codeship.com/projects/52cfb5b0-f71b-0133-c66c-2a2f837358a4/status?branch=master)](https://codeship.com/projects/150675)
 [![codecov](https://codecov.io/gh/tetor/mathetats/branch/master/graph/badge.svg)](https://codecov.io/gh/tetor/mathetats)
