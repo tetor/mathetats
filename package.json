@@ -3,6 +3,7 @@
   "version": "0.1.2",
   "description": "A JavaScript mathematics lib for statistics",
   "main": "dist/mathetats.js",
+  "keywords": ["math", "statistics"],
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "lint": "eslint .",
